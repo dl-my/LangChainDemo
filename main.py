@@ -2,13 +2,12 @@ import os
 from dotenv import load_dotenv
 from langchain_community.chat_models import ChatTongyi
 
-load_dotenv(override=False)
+load_dotenv()
 
-# 初始化 deepseek
+# 初始化模型
 model = ChatTongyi(
     model="qwen-turbo",
-    temperature=0,
-    api_key=os.getenv("QWEN_API_KEY"),
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
 )
 
 # 打印结果
