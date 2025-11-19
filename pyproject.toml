@@ -12,4 +12,5 @@ dependencies = [
     "langchain-community>=0.4.1",
     "loguru>=0.7.3",
     "redis>=7.0.1",
+    "unstructured[md]>=0.18.20",
 ]
